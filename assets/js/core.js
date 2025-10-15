@@ -148,6 +148,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }).catch(err => { console.error('Failed to read clipboard: ', err); });
     });
 
+    // --- New function for footer typing animation ---
+    function animateFooter() {
+        const footerP = document.querySelector('.app-footer p');
+        if (!footerP) return;
+
+        // The parts of the string, keeping the span as one complete piece.
+        const content = [
+            'M', 'a', 'd', 'e', ' ', 'W', 'i', 't', 'h',
+            '<span class="heart-icon">❤️</span>',
+            'B', 'y', ' ', 'M', '.', 'A'
+        ];
+        
+        footerP.innerHTML = '';
+        footerP.classList.add('typing'); // Add class to show the cursor
+
+        let i = 0;
+        const speed = 150; // Milliseconds between each letter
+
+        function typeWriter() {
+            if (i < content.length) {
+                footerP.innerHTML += content[i];
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                // Animation finished, remove the cursor after a short delay
+                setTimeout(() => {
+                    footerP.classList.remove('typing');
+                }, 750);
+            }
+        }
+        
+        // Start the animation after a brief delay to let the page settle
+        setTimeout(typeWriter, 500);
+    }
+
     handleConversion(); // Initial conversion on page load
+    animateFooter(); // Start the footer animation
 });
 
