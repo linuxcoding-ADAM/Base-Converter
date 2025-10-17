@@ -148,17 +148,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }).catch(err => { console.error('Failed to read clipboard: ', err); });
     });
 
-    // --- Setup footer interaction for mobile ---
+    // --- Setup footer interaction for mobile and desktop ---
     function setupFooterInteraction() {
         const footerArea = document.querySelector('.footer-interactive-area');
         if (footerArea) {
-            // Toggle 'active' class on click, which triggers the CSS animation
-            footerArea.addEventListener('click', () => {
+            // Toggle 'active' class when the heart/text area is clicked
+            footerArea.addEventListener('click', (event) => {
+                // Stop this click from bubbling up to the document listener below
+                event.stopPropagation();
                 footerArea.classList.toggle('active');
+            });
+
+            // Add a listener to the whole document to hide the text when clicking anywhere else
+            document.addEventListener('click', () => {
+                if (footerArea.classList.contains('active')) {
+                    footerArea.classList.remove('active');
+                }
             });
         }
     }
 
     handleConversion(); // Initial conversion on page load
-    setupFooterInteraction(); // Set up the footer click listener
+    setupFooterInteraction(); // Set up the improved footer click listener
 });
