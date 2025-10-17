@@ -1,4 +1,4 @@
-## BASE_304 - The Ultimate Base Converter
+## BASE_304 - The Ultimate Base Converter V 2.0.1
 
 A sleek, modern, and highly functional base converter built with pure Vanilla JavaScript, HTML, and CSS. This tool provides instant, accurate conversions between a variety of numerical bases and text, wrapped in a beautiful, responsive, and user-friendly interface.
 
