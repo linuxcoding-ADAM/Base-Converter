@@ -147,8 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
             handleConversion();
         }).catch(err => { console.error('Failed to read clipboard: ', err); });
     });
+    
+    // === NEW: Event listener for the Clear Button ===
+    document.querySelector('.clear-btn')?.addEventListener('click', () => {
+        elements.inputArea.value = '';
+        handleConversion(); // Re-run conversion to clear the output
+    });
 
-    // --- NEW: Rock-Solid Footer Interaction for ALL devices ---
+    // --- FIXED: Rock-Solid Footer Interaction for ALL devices ---
     function setupFooterInteraction() {
         const footerArea = document.querySelector('.footer-interactive-area');
         if (!footerArea) return;
