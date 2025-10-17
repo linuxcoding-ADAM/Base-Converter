@@ -108,6 +108,13 @@ body.dark .swap-btn:hover { border-color: var(--accent-dark); }
 body.dark .utility-btn { background-color: rgba(31, 41, 55, 0.7); border-color: var(--border-dark); color: var(--text-dark); }
 .utility-btn:hover { border-color: var(--accent-light); }
 body.dark .utility-btn:hover { border-color: var(--accent-dark); }
+
+/* === NEW: Style for Clear Button on hover === */
+.clear-btn:hover {
+    color: var(--error-color);
+    border-color: var(--error-color);
+}
+
 .utility-btn .check-icon { position: absolute; transform: scale(0); transition: transform 0.2s ease-out; color: var(--success-color); }
 .utility-btn.copied .check-icon { transform: scale(1); }
 .utility-btn.copied .copy-icon { transform: scale(0); }
@@ -198,7 +205,8 @@ body.dark .footer-interactive-area {
 .footer-interactive-area:hover .by-ma span:nth-child(2), .footer-interactive-area.active .by-ma span:nth-child(2) { transition-delay: 0.08s; }
 .footer-interactive-area:hover .by-ma span:nth-child(3), .footer-interactive-area.active .by-ma span:nth-child(3) { transition-delay: 0.16s; }
 .footer-interactive-area:hover .by-ma span:nth-child(4), .footer-interactive-area.active .by-ma span:nth-child(4) { transition-delay: 0.24s; }
-.footer-interactive-area:hover .by-ma span:nth-child(5), .footer-interactive-area.active .by-ma span:nth-дочерний(5) { transition-delay: 0.32s; }
+/* === FIX: Corrected typo from "nth-дочерний" to "nth-child" === */
+.footer-interactive-area:hover .by-ma span:nth-child(5), .footer-interactive-area.active .by-ma span:nth-child(5) { transition-delay: 0.32s; }
 .footer-interactive-area:hover .by-ma span:nth-child(6), .footer-interactive-area.active .by-ma span:nth-child(6) { transition-delay: 0.40s; }
 
 
@@ -219,7 +227,8 @@ body.dark .footer-interactive-area {
     textarea {
         font-size: 1rem;
         padding: 1rem;
-        padding-right: 90px;
+        /* === FIX: Increased padding to avoid button overlap on mobile === */
+        padding-right: 130px; 
     }
     .button-group {
         display: flex;
