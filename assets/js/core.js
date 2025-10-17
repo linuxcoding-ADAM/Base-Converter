@@ -148,26 +148,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }).catch(err => { console.error('Failed to read clipboard: ', err); });
     });
 
-    // --- Setup footer interaction for mobile and desktop ---
+    // --- NEW: Rock-Solid Footer Interaction for ALL devices ---
     function setupFooterInteraction() {
         const footerArea = document.querySelector('.footer-interactive-area');
-        if (footerArea) {
-            // Toggle 'active' class when the heart/text area is clicked
-            footerArea.addEventListener('click', (event) => {
-                // Stop this click from bubbling up to the document listener below
-                event.stopPropagation();
-                footerArea.classList.toggle('active');
-            });
+        if (!footerArea) return;
 
-            // Add a listener to the whole document to hide the text when clicking anywhere else
-            document.addEventListener('click', () => {
-                if (footerArea.classList.contains('active')) {
-                    footerArea.classList.remove('active');
-                }
-            });
-        }
+        const toggleFooter = (event) => {
+            // Stop this event from immediately bubbling to the document listener and closing itself
+            event.stopPropagation();
+            footerArea.classList.toggle('active');
+        };
+
+        const hideFooter = () => {
+            if (footerArea.classList.contains('active')) {
+                footerArea.classList.remove('active');
+            }
+        };
+
+        // Listen for both clicks (desktop) and touch starts (mobile)
+        footerArea.addEventListener('click', toggleFooter);
+        footerArea.addEventListener('touchstart', (event) => {
+            // Important: Prevent the browser from firing a "ghost click" 300ms later
+            event.preventDefault();
+            toggleFooter(event);
+        });
+        
+        // Listeners to close the footer when clicking/tapping anywhere else
+        document.addEventListener('click', hideFooter);
+        document.addEventListener('touchstart', hideFooter);
     }
 
     handleConversion(); // Initial conversion on page load
-    setupFooterInteraction(); // Set up the improved footer click listener
+    setupFooterInteraction(); // Set up the new, robust footer listener
 });
