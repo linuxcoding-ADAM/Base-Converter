@@ -62,7 +62,9 @@ body.dark .theme-toggle .sun { transform: translateY(-150%) scale(0.5); }
 
 .converter-core {
     flex-grow: 1; display: flex; align-items: stretch; gap: 1rem;
-    padding: 0.5rem 4rem 4rem; animation: fadeInUp 0.5s ease-out;
+    padding: 0.5rem 4rem 1rem; /* Reduced bottom padding */
+    animation: fadeInUp 0.5s ease-out;
+    min-height: 0; /* Important for flexbox shrinking on mobile */
 }
 .field-container { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 .field-header {
@@ -129,18 +131,16 @@ body.dark textarea:focus { border-color: var(--accent-dark); box-shadow: 0 0 0 4
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
-/* --- Footer Styles --- */
+/* --- Footer Styles (The Bulletproof Solution) --- */
 .app-footer {
-    position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-53%); /* Shifted more to the left */
-    z-index: 10;
+    /* Removed position: fixed. It is now a normal flex item in the body */
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    text-align: center;
+    padding: 1rem;
     opacity: 0.9;
-    padding: 0 1rem;
 }
 .footer-interactive-area {
-    display: flex;
+    display: inline-flex; /* Use inline-flex to center the container itself */
     justify-content: center;
     align-items: center;
     font-family: var(--font-footer);
@@ -148,10 +148,10 @@ body.dark textarea:focus { border-color: var(--accent-dark); box-shadow: 0 0 0 4
     font-weight: 700;
     color: var(--text-light);
     cursor: pointer;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard */
+    -webkit-user-select: none;
+    user-select: none;
     min-height: 30px;
+    transform: translateX(-1rem); /* The left shift you wanted */
 }
 body.dark .footer-interactive-area {
     color: var(--text-dark);
@@ -183,6 +183,7 @@ body.dark .footer-interactive-area {
     opacity: 1;
     transform: translateY(0);
 }
+/* Staggered animation delays remain the same */
 .footer-interactive-area:hover .made-with span:nth-child(1), .footer-interactive-area.active .made-with span:nth-child(1) { transition-delay: 0s; }
 .footer-interactive-area:hover .made-with span:nth-child(2), .footer-interactive-area.active .made-with span:nth-child(2) { transition-delay: 0.08s; }
 .footer-interactive-area:hover .made-with span:nth-child(3), .footer-interactive-area.active .made-with span:nth-child(3) { transition-delay: 0.16s; }
@@ -197,16 +198,15 @@ body.dark .footer-interactive-area {
 .footer-interactive-area:hover .by-ma span:nth-child(2), .footer-interactive-area.active .by-ma span:nth-child(2) { transition-delay: 0.08s; }
 .footer-interactive-area:hover .by-ma span:nth-child(3), .footer-interactive-area.active .by-ma span:nth-child(3) { transition-delay: 0.16s; }
 .footer-interactive-area:hover .by-ma span:nth-child(4), .footer-interactive-area.active .by-ma span:nth-child(4) { transition-delay: 0.24s; }
-.footer-interactive-area:hover .by-ma span:nth-child(5), .footer-interactive-area.active .by-ma span:nth-child(5) { transition-delay: 0.32s; }
+.footer-interactive-area:hover .by-ma span:nth-child(5), .footer-interactive-area.active .by-ma span:nth-дочерний(5) { transition-delay: 0.32s; }
 .footer-interactive-area:hover .by-ma span:nth-child(6), .footer-interactive-area.active .by-ma span:nth-child(6) { transition-delay: 0.40s; }
 
 
 @media (max-width: 800px) {
-    /* Added more bottom padding to avoid overlap with the fixed footer */
-    .converter-core { flex-direction: column; padding: 0.5rem 0.5rem 6rem; gap: 0; }
-    .swap-container { 
-        order: 1; 
-        padding: 0.5rem 0; 
+    .converter-core { flex-direction: column; padding: 0.5rem 0.5rem 1rem; gap: 0; }
+    .swap-container {
+        order: 1;
+        padding: 0.5rem 0;
         justify-content: center;
     }
     .from-container { order: 0; }
@@ -216,17 +216,17 @@ body.dark .footer-interactive-area {
     .app-header { padding: 1.5rem 1rem; }
     .title-container { position: static; transform: none; text-align: center; }
     .theme-toggle { position: absolute; top: 1.25rem; right: 1rem; }
-    textarea { 
-        font-size: 1rem; 
-        padding: 1rem; 
+    textarea {
+        font-size: 1rem;
+        padding: 1rem;
         padding-right: 90px;
     }
-    .button-group { 
+    .button-group {
         display: flex;
         top: 10px; right: 10px;
     }
     .app-footer {
-        bottom: 0.75rem;
+        padding: 0.5rem 1rem 1rem; /* Adjust padding for mobile */
     }
     .footer-interactive-area {
         font-size: 1.3rem;
