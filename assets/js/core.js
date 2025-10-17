@@ -1,1 +1,164 @@
-const _0xcb0b05=_0x2ad0;function _0x49e2(){const _0x34d19e=['0123456789abcdef','value','Text','fromCharCode','4380SBKudw','toString','addEventListener','contains','theme','getElementById','toCharCodes','length','writeText','Failed\x20to\x20read\x20clipboard:\x20','6498ZtnhNm','typing','var(--warning-color)','fromBaseSelect','input-area','forEach','$1\x20','.paste-btn','replace','style','classList','1647453SNSQzg','clipboard','text','dark','fromBigInt','setItem','then','ERROR:\x20','trim','<span\x20class=\x22heart-icon\x22>❤️</span>','844njltqj','remove','light','querySelector','innerHTML','4336064XrUyHw','333907GtsHMX','map','to-base-select','4642071ssNDQc','Numerical','copied','themeToggle','2OFNahD','body','swap-btn','split','join','error','color','17375FsiLnA','2035932cLffXC','DOMContentLoaded','change','theme-toggle','click','toggle','.copy-btn','inputArea','add','querySelectorAll','toBigInt'];_0x49e2=function(){return _0x34d19e;};return _0x49e2();}function _0x2ad0(_0x24dc4f,_0x3a4aa2){const _0x49e2d3=_0x49e2();return _0x2ad0=function(_0x2ad06c,_0x4b4295){_0x2ad06c=_0x2ad06c-0xcc;let _0x13023b=_0x49e2d3[_0x2ad06c];return _0x13023b;},_0x2ad0(_0x24dc4f,_0x3a4aa2);}(function(_0x4334d5,_0xf417ca){const _0x5ecca2=_0x2ad0,_0x17b0f2=_0x4334d5();while(!![]){try{const _0x17928d=-parseInt(_0x5ecca2(0x100))/0x1+parseInt(_0x5ecca2(0x107))/0x2*(parseInt(_0x5ecca2(0xf0))/0x3)+-parseInt(_0x5ecca2(0xfa))/0x4*(-parseInt(_0x5ecca2(0x10e))/0x5)+-parseInt(_0x5ecca2(0xcc))/0x6+parseInt(_0x5ecca2(0x103))/0x7+-parseInt(_0x5ecca2(0xff))/0x8+parseInt(_0x5ecca2(0xe5))/0x9*(-parseInt(_0x5ecca2(0xdb))/0xa);if(_0x17928d===_0xf417ca)break;else _0x17b0f2['push'](_0x17b0f2['shift']());}catch(_0x48ea09){_0x17b0f2['push'](_0x17b0f2['shift']());}}}(_0x49e2,0x65168),document[_0xcb0b05(0xdd)](_0xcb0b05(0xcd),()=>{const _0x1c51c5=_0xcb0b05,_0x45a07f={'inputArea':document[_0x1c51c5(0xe0)](_0x1c51c5(0xe9)),'outputArea':document[_0x1c51c5(0xe0)]('output-area'),'fromBaseSelect':document[_0x1c51c5(0xe0)]('from-base-select'),'toBaseSelect':document['getElementById'](_0x1c51c5(0x102)),'themeToggle':document['getElementById'](_0x1c51c5(0xcf)),'swapBtn':document[_0x1c51c5(0xe0)](_0x1c51c5(0x109)),'body':document[_0x1c51c5(0x108)]},_0x5a7087={'Numerical':{'toBigInt'(_0x3f3dbd,_0x4bbeab){const _0x1cea71=_0x1c51c5,_0x20c38d=parseInt(_0x4bbeab),_0x1de167=_0x3f3dbd[_0x1cea71(0xed)](/\s/g,'')['toLowerCase']();if(_0x1de167==='')return 0x0n;let _0x3e6c95=0x0n;const _0x2f9be6=_0x1cea71(0xd7);for(const _0x2df413 of _0x1de167){const _0x38978a=_0x2f9be6['indexOf'](_0x2df413);if(_0x38978a===-0x1||_0x38978a>=_0x20c38d)throw new Error('\x27'+_0x2df413+'\x27\x20is\x20not\x20a\x20valid\x20digit\x20for\x20Base-'+_0x20c38d+'.');_0x3e6c95=_0x3e6c95*BigInt(_0x20c38d)+BigInt(_0x38978a);}return _0x3e6c95;},'fromBigInt'(_0x42f7d5,_0x8f9a10){const _0x526992=_0x1c51c5,_0x2fc232=parseInt(_0x8f9a10);return _0x42f7d5[_0x526992(0xdc)](_0x2fc232)['toUpperCase']();}},'Text':{'toCharCodes'(_0x48e6d5){const _0x185bf5=_0x1c51c5,_0x189e55=[];for(let _0x306b71=0x0;_0x306b71<_0x48e6d5[_0x185bf5(0xe2)];_0x306b71++){_0x189e55['push'](_0x48e6d5['charCodeAt'](_0x306b71));}return _0x189e55;},'fromCharCodes'(_0x452a24){const _0x2542a3=_0x1c51c5;return String[_0x2542a3(0xda)](..._0x452a24);}}};function _0x109f73(){const _0x3154e8=_0x1c51c5,{inputArea:_0x23b143,outputArea:_0x2cc7e8,fromBaseSelect:_0x15793b,toBaseSelect:_0x3d9ed7}=_0x45a07f,_0x53f3e1=_0x23b143[_0x3154e8(0xd8)],_0x11abf8=_0x15793b['value'],_0x43e1a1=_0x3d9ed7[_0x3154e8(0xd8)];if(_0x11abf8===_0x43e1a1){_0x2cc7e8[_0x3154e8(0xd8)]='Source\x20and\x20target\x20bases\x20cannot\x20be\x20the\x20same.',_0x2cc7e8['style'][_0x3154e8(0x10d)]=_0x3154e8(0xe7);return;}if(_0x53f3e1[_0x3154e8(0xf8)]()===''){_0x2cc7e8[_0x3154e8(0xd8)]='';return;}try{let _0x2a003c='';if(_0x11abf8===_0x3154e8(0xf2)){const _0x5b1bff=_0x5a7087[_0x3154e8(0xd9)][_0x3154e8(0xe1)](_0x53f3e1);_0x2a003c=_0x5b1bff[_0x3154e8(0x101)](_0x29c58d=>_0x5a7087[_0x3154e8(0x104)][_0x3154e8(0xf4)](BigInt(_0x29c58d),_0x43e1a1))[_0x3154e8(0x10b)]('\x20');}else{if(_0x43e1a1===_0x3154e8(0xf2)){const _0x3f51c8=_0x53f3e1[_0x3154e8(0xf8)]()[_0x3154e8(0x10a)](/\s+/),_0x1d28b5=_0x3f51c8[_0x3154e8(0x101)](_0x55bb5d=>_0x5a7087[_0x3154e8(0x104)][_0x3154e8(0xd6)](_0x55bb5d,_0x11abf8));_0x2a003c=_0x5a7087['Text']['fromCharCodes'](_0x1d28b5);}else{const _0x5c2c6c=_0x5a7087[_0x3154e8(0x104)]['toBigInt'](_0x53f3e1,_0x11abf8);_0x2a003c=_0x5a7087[_0x3154e8(0x104)][_0x3154e8(0xf4)](_0x5c2c6c,_0x43e1a1),_0x43e1a1==='2'&&(_0x2a003c=_0x2a003c['replace'](new RegExp('(.{4})','g'),_0x3154e8(0xeb))[_0x3154e8(0xf8)]());}}_0x2cc7e8[_0x3154e8(0xd8)]=_0x2a003c,_0x2cc7e8[_0x3154e8(0xee)]['color']='';}catch(_0x126c31){_0x2cc7e8[_0x3154e8(0xd8)]=_0x3154e8(0xf7)+_0x126c31['message'],_0x2cc7e8[_0x3154e8(0xee)][_0x3154e8(0x10d)]='var(--error-color)';}}[_0x45a07f[_0x1c51c5(0xd3)],_0x45a07f[_0x1c51c5(0xe8)],_0x45a07f['toBaseSelect']][_0x1c51c5(0xea)](_0x50386a=>{const _0x5cdc7b=_0x1c51c5;_0x50386a['addEventListener']('input',_0x109f73),_0x50386a[_0x5cdc7b(0xdd)](_0x5cdc7b(0xce),_0x109f73);}),_0x45a07f['swapBtn'][_0x1c51c5(0xdd)](_0x1c51c5(0xd0),()=>{const _0x31b42c=_0x1c51c5,{inputArea:_0x4df237,outputArea:_0x524ea4,fromBaseSelect:_0x3aca94,toBaseSelect:_0x26ab53}=_0x45a07f;if(_0x524ea4[_0x31b42c(0xee)][_0x31b42c(0x10d)])return;const _0xff13d=_0x3aca94['value'];_0x3aca94[_0x31b42c(0xd8)]=_0x26ab53[_0x31b42c(0xd8)],_0x26ab53[_0x31b42c(0xd8)]=_0xff13d,_0x4df237[_0x31b42c(0xd8)]=_0x524ea4[_0x31b42c(0xd8)],_0x109f73();});const _0x1118fd=localStorage['getItem']('theme');if(_0x1118fd===_0x1c51c5(0xf3))_0x45a07f[_0x1c51c5(0x108)][_0x1c51c5(0xef)][_0x1c51c5(0xd4)]('dark');_0x45a07f[_0x1c51c5(0x106)][_0x1c51c5(0xdd)](_0x1c51c5(0xd0),()=>{const _0x41da6d=_0x1c51c5;_0x45a07f[_0x41da6d(0x108)][_0x41da6d(0xef)][_0x41da6d(0xd1)](_0x41da6d(0xf3)),localStorage[_0x41da6d(0xf5)](_0x41da6d(0xdf),_0x45a07f[_0x41da6d(0x108)]['classList'][_0x41da6d(0xde)](_0x41da6d(0xf3))?_0x41da6d(0xf3):_0x41da6d(0xfc));}),document[_0x1c51c5(0xd5)](_0x1c51c5(0xd2))[_0x1c51c5(0xea)](_0x5e3dd3=>{const _0x1121ff=_0x1c51c5;_0x5e3dd3[_0x1121ff(0xdd)]('click',()=>{const _0x17b89a=_0x1121ff,_0x2d5018=_0x5e3dd3['dataset']['target'],_0x3ad298=document[_0x17b89a(0xe0)](_0x2d5018);_0x3ad298[_0x17b89a(0xd8)]&&!_0x3ad298['style']['color']&&navigator[_0x17b89a(0xf1)][_0x17b89a(0xe3)](_0x3ad298[_0x17b89a(0xd8)])[_0x17b89a(0xf6)](()=>{const _0xf3e3a8=_0x17b89a;_0x5e3dd3[_0xf3e3a8(0xef)][_0xf3e3a8(0xd4)](_0xf3e3a8(0x105)),setTimeout(()=>_0x5e3dd3['classList'][_0xf3e3a8(0xfb)](_0xf3e3a8(0x105)),0x5dc);});});}),document['querySelector'](_0x1c51c5(0xec))?.['addEventListener'](_0x1c51c5(0xd0),()=>{const _0x1c19b7=_0x1c51c5;navigator[_0x1c19b7(0xf1)]['readText']()[_0x1c19b7(0xf6)](_0x39ccdd=>{const _0x28e7bf=_0x1c19b7;_0x45a07f[_0x28e7bf(0xd3)]['value']=_0x39ccdd,_0x109f73();})['catch'](_0x3c1b82=>{const _0x51b799=_0x1c19b7;console[_0x51b799(0x10c)](_0x51b799(0xe4),_0x3c1b82);});});function _0xc34ba1(){const _0x56fa8f=_0x1c51c5,_0x16d20b=document[_0x56fa8f(0xfd)]('.app-footer\x20p');if(!_0x16d20b)return;const _0x3963e1=['M','a','d','e','\x20','W','i','t','h',_0x56fa8f(0xf9),'B','y','\x20','M','.','A'];_0x16d20b[_0x56fa8f(0xfe)]='',_0x16d20b[_0x56fa8f(0xef)][_0x56fa8f(0xd4)](_0x56fa8f(0xe6));let _0x27654d=0x0;const _0x5380c4=0x96;function _0x29d042(){const _0x39c0c8=_0x56fa8f;_0x27654d<_0x3963e1[_0x39c0c8(0xe2)]?(_0x16d20b[_0x39c0c8(0xfe)]+=_0x3963e1[_0x27654d],_0x27654d++,setTimeout(_0x29d042,_0x5380c4)):setTimeout(()=>{const _0x3c91d8=_0x39c0c8;_0x16d20b[_0x3c91d8(0xef)][_0x3c91d8(0xfb)](_0x3c91d8(0xe6));},0x2ee);}setTimeout(_0x29d042,0x1f4);}_0x109f73(),_0xc34ba1();}));
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Centralized DOM Element Management ---
+    const elements = {
+        inputArea: document.getElementById('input-area'),
+        outputArea: document.getElementById('output-area'),
+        fromBaseSelect: document.getElementById('from-base-select'),
+        toBaseSelect: document.getElementById('to-base-select'),
+        themeToggle: document.getElementById('theme-toggle'),
+        swapBtn: document.getElementById('swap-btn'),
+        body: document.body,
+    };
+
+    // --- The Final, Ultra-Reliable Conversion Engine ---
+    const ConverterEngine = {
+        // Module for number-to-number conversions
+        Numerical: {
+            // Converts a numerical string from any base into a BigInt.
+            toBigInt(value, fromBase) {
+                const base = parseInt(fromBase);
+                const sanitizedValue = value.replace(/\s/g, '').toLowerCase();
+                if (sanitizedValue === '') return 0n;
+
+                let bigIntValue = 0n;
+                const alphabet = '0123456789abcdef';
+                for (const char of sanitizedValue) {
+                    const charValue = alphabet.indexOf(char);
+                    if (charValue === -1 || charValue >= base) {
+                        throw new Error(`'${char}' is not a valid digit for Base-${base}.`);
+                    }
+                    bigIntValue = bigIntValue * BigInt(base) + BigInt(charValue);
+                }
+                return bigIntValue;
+            },
+            // Converts a BigInt into a string of the target base.
+            fromBigInt(bigIntValue, toBase) {
+                const base = parseInt(toBase);
+                return bigIntValue.toString(base).toUpperCase();
+            }
+        },
+        // Module for conversions involving text
+        Text: {
+            // Converts a string into an array of its character codes.
+            toCharCodes(text) {
+                const codes = [];
+                for (let i = 0; i < text.length; i++) {
+                    codes.push(text.charCodeAt(i));
+                }
+                return codes;
+            },
+            // Converts an array of character codes back into a string.
+            fromCharCodes(codes) {
+                return String.fromCharCode(...codes);
+            }
+        }
+    };
+
+    // --- Main Application Logic ---
+    function handleConversion() {
+        const { inputArea, outputArea, fromBaseSelect, toBaseSelect } = elements;
+        const inputValue = inputArea.value;
+        const fromBase = fromBaseSelect.value;
+        const toBase = toBaseSelect.value;
+
+        // --- Validation ---
+        if (fromBase === toBase) {
+            outputArea.value = "Source and target bases cannot be the same.";
+            outputArea.style.color = 'var(--warning-color)';
+            return;
+        }
+        if (inputValue.trim() === '') {
+            outputArea.value = '';
+            return;
+        }
+        
+        try {
+            let result = '';
+
+            // --- Conversion Routing ---
+            if (fromBase === 'text') {
+                // Path 1: Text to a numerical base (character-wise)
+                const codes = ConverterEngine.Text.toCharCodes(inputValue);
+                result = codes.map(code => ConverterEngine.Numerical.fromBigInt(BigInt(code), toBase)).join(' ');
+            } else if (toBase === 'text') {
+                // Path 2: A numerical base to text (character-wise)
+                const numbers = inputValue.trim().split(/\s+/);
+                const codes = numbers.map(num => ConverterEngine.Numerical.toBigInt(num, fromBase));
+                result = ConverterEngine.Text.fromCharCodes(codes);
+            } else {
+                // Path 3: Standard number-to-number conversion
+                const bigIntValue = ConverterEngine.Numerical.toBigInt(inputValue, fromBase);
+                result = ConverterEngine.Numerical.fromBigInt(bigIntValue, toBase);
+                 // Add spacing to binary output for superior readability
+                if (toBase === '2') {
+                    result = result.replace(new RegExp(`(.{4})`, 'g'), '$1 ').trim();
+                }
+            }
+            
+            outputArea.value = result;
+            outputArea.style.color = ''; // Reset color on success
+        } catch (error) {
+            outputArea.value = `ERROR: ${error.message}`;
+            outputArea.style.color = 'var(--error-color)';
+        }
+    }
+
+    // --- Event Listeners ---
+    [elements.inputArea, elements.fromBaseSelect, elements.toBaseSelect].forEach(el => {
+        el.addEventListener('input', handleConversion);
+        el.addEventListener('change', handleConversion);
+    });
+
+    elements.swapBtn.addEventListener('click', () => {
+        const { inputArea, outputArea, fromBaseSelect, toBaseSelect } = elements;
+        if (outputArea.style.color) return; // Prevent swap if output is an error/warning
+        
+        const fromValue = fromBaseSelect.value;
+        fromBaseSelect.value = toBaseSelect.value;
+        toBaseSelect.value = fromValue;
+        
+        // The output becomes the new input, preserving formatting.
+        inputArea.value = outputArea.value;
+        handleConversion();
+    });
+
+    // Theme & Clipboard functionality
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') elements.body.classList.add('dark');
+    elements.themeToggle.addEventListener('click', () => {
+        elements.body.classList.toggle('dark');
+        localStorage.setItem('theme', elements.body.classList.contains('dark') ? 'dark' : 'light');
+    });
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.dataset.target;
+            const targetTextarea = document.getElementById(targetId);
+            if (targetTextarea.value && !targetTextarea.style.color) {
+                navigator.clipboard.writeText(targetTextarea.value).then(() => {
+                    button.classList.add('copied');
+                    setTimeout(() => button.classList.remove('copied'), 1500);
+                });
+            }
+        });
+    });
+    document.querySelector('.paste-btn')?.addEventListener('click', () => {
+        navigator.clipboard.readText().then(text => {
+            elements.inputArea.value = text;
+            handleConversion();
+        }).catch(err => { console.error('Failed to read clipboard: ', err); });
+    });
+
+    // --- Setup footer interaction for mobile ---
+    function setupFooterInteraction() {
+        const footerArea = document.querySelector('.footer-interactive-area');
+        if (footerArea) {
+            // Toggle 'active' class on click, which triggers the CSS animation
+            footerArea.addEventListener('click', () => {
+                footerArea.classList.toggle('active');
+            });
+        }
+    }
+
+    handleConversion(); // Initial conversion on page load
+    setupFooterInteraction(); // Set up the footer click listener
+});
